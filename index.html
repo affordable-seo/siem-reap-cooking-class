@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="canonical" href="https://siem-reap-ccoking-class.tiiny.site/">
+<link rel="icon" href="/images/siem-reap-cooking-class.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your Cooking Class in Siem Reap</title>
+    <meta name="description" content="Cooking class in Siem Reap with a private chef. Private and group Khmer cooking classes available everyday. Free tuk-tuk pickup and drop-off">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base styles */
+        :root {
+            --main-color: #ffffff;
+            --accent-color: #e16d24;
+            --accent-light: #f18c4e;
+            --text-color: #333;
+            --glass-bg: rgba(255, 255, 255, 0.2);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            --dark-glass: rgba(225, 109, 36, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--main-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Glass effect utility classes */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 10px;
+        }
+
+        .dark-glass {
+            background: var(--dark-glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--glass-shadow);
+            border-radius: 10px;
+            color: white;
+        }
+
+        /* Particle background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/siem-reap-cooking-class-restaurant.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--main-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--accent-color) 0%, transparent 70%);
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--main-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* IMPROVED: Animated ingredients floating in hero */
+        .floating-ingredients {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .ingredient {
+            position: absolute;
+            font-size: 2.5rem;
+            opacity: 0.7;
+            color: white;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: float 12s infinite ease-in-out;
+            z-index: 0;
+            transition: transform 0.3s;
+        }
+
+        .ingredient:hover {
+            transform: scale(1.5) rotate(15deg);
+            opacity: 1;
+        }
+
+        /* IMPROVED: Floating animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-30px) translateX(15px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-50px) translateX(-10px) rotate(-5deg);
+            }
+            75% {
+                transform: translateY(-20px) translateX(-15px) rotate(3deg);
+            }
+            100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--accent-color);
+            color: var(--main-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: var(--accent-light);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text section */
+        .text-section {
+            background: linear-gradient(to right, #f9f9f9, #fff);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 60%);
+            opacity: 0.5;
+            transform: rotate(30deg);
+            z-index: 0;
+        }
+
+        .text-box {
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 900px;
+            border-left: 5px solid var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .text-box h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .text-box h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .text-box p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .text-box strong {
+            color: var(--accent-color);
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .text-box strong::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .text-box strong:hover::after {
+            width: 100%;
+        }
+
+        /* Slideshow Section */
+        .slideshow-section {
+            background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            height: 500px;
+        }
+
+        .mySlides {
+            display: none;
+            height: 500px;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+
+        /* Slideshow text */
+        .slide-text {
+            color: white;
+            font-size: 1.2rem;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+
+        /* Slideshow dots */
+        .dots-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .active-dot, .dot:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* Pricing section */
+        .pricing-section {
+            background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .pricing-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-color) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            color: white;
+        }
+
+        .pricing-card:hover::before {
+            opacity: 0.9;
+        }
+
+        /* FIXED: Changed from rotateY(180deg) to scale(1.1) */
+        .pricing-card:hover .price-circle {
+            background-color: white;
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .price-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            transition: all 0.5s ease;
+            position: relative;
+        }
+
+        .price-amount {
+            font-size: 2.2rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .price-duration {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .pricing-card:hover h3 {
+            color: white;
+        }
+
+        .pricing-features {
+            list-style-type: none;
+            margin: 20px 0;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .pricing-features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .pricing-card:hover .pricing-features li {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .pricing-features i {
+            margin-right: 10px;
+            color: var(--accent-color);
+            transition: color 0.3s ease;
+        }
+
+        .pricing-card:hover .pricing-features i {
+            color: white;
+        }
+
+        /* Testimonials section */
+        .testimonials-section {
+            background: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .testimonials-carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial {
+            flex: 0 0 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .testimonial-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .testimonial-content::before {
+            content: '"';
+            font-size: 80px;
+            color: var(--accent-light);
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        .country-flag {
+            font-size: 1.5rem;
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background-color: var(--accent-color);
+        }
+
+        /* Icons section */
+        .icons-section {
+            background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .icon-item {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-color) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .icon-item:hover {
+            transform: translateY(-10px) scale(1.03);
+            color: white;
+        }
+
+        .icon-item:hover::before {
+            opacity: 0.9;
+        }
+
+        /* FIXED: Changed from rotateY(180deg) to scale(1.1) */
+        .icon-item:hover .icon-circle {
+            background-color: white;
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .icon-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+            transition: all 0.5s ease;
+        }
+
+        .icon-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .icon-item:hover h3 {
+            color: white;
+        }
+
+        .icon-item p {
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .icon-item:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Map and contact section */
+        .contact-section {
+            background: linear-gradient(to right, #fff, #f9f9f9);
+            position: relative;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 450px;
+        }
+
+        .map-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            position: relative;
+        }
+
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-light);
+        }
+
+        .address {
+            margin-bottom: 30px;
+        }
+
+        .address p {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+
+        .address p:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .contact-details p:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-details i {
+            margin-right: 15px;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            width: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-details p:hover i {
+            transform: scale(1.2);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-icons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .social-icons a:hover::before {
+            left: 100%;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: var(--main-color);
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        /* IMPROVED: Floating action button */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: pulse 2s infinite, floatBtn 6s ease-in-out infinite;
+            overflow: hidden;
+        }
+
+        .floating-btn::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(0);
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+
+        .floating-btn:hover::before {
+            transform: scale(1.8);
+            opacity: 0;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 8px 25px rgba(225, 109, 36, 0.5);
+        }
+
+        .floating-btn:active {
+            transform: scale(0.95);
+        }
+
+        .floating-btn i {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .floating-btn:hover i {
+            transform: scale(1.2);
+        }
+
+        /* IMPROVED: Button floating animation */
+        @keyframes floatBtn {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* IMPROVED: Pulse animation */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 109, 36, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 109, 36, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 109, 36, 0);
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .text-box {
+                padding: 20px;
+            }
+            
+            .testimonial {
+                padding: 20px;
+            }
+            
+            .testimonial-content {
+                padding: 30px 20px;
+            }
+
+            .pricing-card {
+                min-width: 100%;
+            }
+
+            .icon-item {
+                min-width: 100%;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .map-container, .contact-info {
+                min-width: 100%;
+            }
+
+            .floating-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .slideshow-container, .mySlides {
+                height: 300px;
+            }
+            
+            .ingredient {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <a href="https://changkrankhmer.com/siem-reap-cooking-class/" target="_blank" class="floating-btn" id="bookNowBtn">
+        <i class="fas fa-utensils"></i>
+    </a>
+
+    <section class="hero">
+        <div class="floating-ingredients">
+            <!-- More ingredients with varied animations -->
+            <div class="ingredient" style="top: 15%; left: 5%; animation-delay: 0s; animation-duration: 15s;">🍃</div>
+            <div class="ingredient" style="top: 25%; left: 85%; animation-delay: 1s; animation-duration: 14s;">🌶️</div>
+            <div class="ingredient" style="top: 75%; left: 10%; animation-delay: 2s; animation-duration: 16s;">🍚</div>
+            <div class="ingredient" style="top: 65%; left: 80%; animation-delay: 3s; animation-duration: 13s;">🐟</div>
+            <div class="ingredient" style="top: 35%; left: 3%; animation-delay: 4s; animation-duration: 17s;">🥬</div>
+            <div class="ingredient" style="top: 45%; left: 92%; animation-delay: 5s; animation-duration: 12s;">🍋</div>
+            <div class="ingredient" style="top: 10%; left: 50%; animation-delay: 6s; animation-duration: 18s;">🥥</div>
+            <div class="ingredient" style="top: 85%; left: 60%; animation-delay: 7s; animation-duration: 15s;">🧄</div>
+            <div class="ingredient" style="top: 55%; left: 25%; animation-delay: 8s; animation-duration: 14s;">🧅</div>
+            <div class="ingredient" style="top: 30%; left: 70%; animation-delay: 9s; animation-duration: 16s;">🍌</div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content glass">
+                <h1>Siem Reap Cooking Class</h1>
+                <p>Learn to cook Khmer dishes in a beautiful traditional Khmer house</p>
+                <a href="https://changkrankhmer.com/siem-reap-cooking-class/" target="_blank" class="btn">Book Your Class</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="container">
+            <div class="text-box">
+                <h2>Discover Authentic Khmer Cuisine</h2>
+                <p>Want a unique activity during your Siem Reap visit?</p>
+                <p>A <a href="https://changkrankhmer.com/siem-reap-cooking-class/" target="_blank">Siem Reap cooking class</a> is the perfect break from exploring temples.</p>
+                <p>Get ready for a memorable culinary experience in Siem Reap! Your journey starts with a guided market tour, where Chef Ly Seng will introduce you to the fresh ingredients essential to Cambodian cooking.</p>
+                <p>Back at our restaurant, you'll have your own personal cooking station. Your chef will guide you step by step as you prepare classic Khmer dishes like <strong>spring rolls</strong>, <strong>Lotus salad with pork belly</strong>, <strong>Cabbage salad with chicken</strong>, <strong>Fried Lok lak with mushrooms</strong>, or the famous <strong>amok fish</strong>.</p>
+                <p>After your hands-on session, the class ends with everyone enjoying the incredible meal they've created together.</p>
+                <p>We provide complimentary tuk-tuk transport to and from your hotel.</p>
+                <p>The experience is 2-3 hours long, depending on whether you include the market visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Slideshow Section -->
+    <section class="slideshow-section">
+        <div class="container">
+            <h2>Experience Our Cooking Class</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem;">Take a visual journey through our authentic Khmer cooking experience</p>
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_1.jpg" alt="Cooking class participants learning Khmer cuisine">
+                    <div class="slide-text">Hands-on cooking experience with our expert chefs</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_2.jpg" alt="Fresh ingredients for Cambodian cooking">
+                    <div class="slide-text">Fresh, local ingredients are the foundation of authentic Khmer cuisine</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_3.jpg" alt="Traditional Khmer dishes">
+                    <div class="slide-text">Create and enjoy traditional dishes like Fish Amok and fresh spring rolls</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_4.jpg" alt="Market tour experience">
+                    <div class="slide-text">Explore local markets to discover authentic Cambodian ingredients</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_5.jpg" alt="Cooking in traditional setting">
+                    <div class="slide-text">Learn in a beautiful traditional Khmer house setting</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_6.jpg" alt="Group cooking class">
+                    <div class="slide-text">Enjoy our group classes with fellow cooking enthusiasts</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="/images/siem_reap_cooking_class_7.jpg" alt="Finished dishes presentation">
+                    <div class="slide-text">Proudly present your culinary creations at the end of the class</div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="dots-container">
+                <span class="dot active-dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Cooking Class Pricing</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem;">We offer 7 classes daily. Choose the experience that suits you best</p>
+
+            <div class="pricing-container">
+                <div class="pricing-card glass">
+                    <div class="price-circle">
+                        <span class="price-amount">$32</span>
+                        <span class="price-duration">per person</span>
+                    </div>
+                    <h3>Standard Class</h3>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 2-3 hour cooking experience</li>
+                        <li><i class="fas fa-check-circle"></i> Learn to cook 3 traditional Khmer dishes</li>
+                        <li><i class="fas fa-check-circle"></i> Individual cooking station</li>
+                        <li><i class="fas fa-check-circle"></i> Complimentary tuk-tuk pickup</li>
+                        <li><i class="fas fa-check-circle"></i> Certificate of completion</li>
+                    </ul>
+                    <a href="https://changkrankhmer.com/siem-reap-cooking-class/" target="_blank" class="btn">Book Standard Class</a>
+                </div>
+
+                <div class="pricing-card glass">
+                    <div class="price-circle">
+                        <span class="price-amount">$37</span>
+                        <span class="price-duration">per person</span>
+                    </div>
+                    <h3>Class with Market Tour</h3>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Everything included in the Standard Class</li>
+                        <li><i class="fas fa-check-circle"></i> Guided local market tour</li>
+                        <li><i class="fas fa-check-circle"></i> Learn about authentic Cambodian ingredients</li>
+                        <li><i class="fas fa-check-circle"></i> Hands-on ingredient selection</li>
+                        <li><i class="fas fa-check-circle"></i> A deeper cultural immersion</li>
+                    </ul>
+                    <a href="https://changkrankhmer.com/siem-reap-cooking-class/" target="_blank" class="btn">Book with Market Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">Excellent matinée passée avec le chef pour un cours de cuisine mémorable. Visite du marché central de siem reap et préparation de notre repas cambodgien. Une demie journée passée avec le sourire, à apprendre cuisine et kmer, une superbe expérience en famille. Le cadre est magnifique . Il ne faut pas hésiter à faire le detour</p>
+                            <div class="testimonial-author">
+                                <span class="country-flag">🇫🇷</span>
+                                <span>Isabelle, France</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">We took a cooking class here and it was the best experience to have in Siem Reap. Everything was well planned out and taken care of, and the staff was wonderful. We learned 3 delicious dishes and got to enjoy them in the restaurant afterwards. I cannot recommend enough!!</p>
+                            <div class="testimonial-author">
+                                <span class="country-flag">🇨🇦</span>
+                                <span>Alexa, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">This is a wonderful hidden spot elevated amongst the trees. We did a wonderful cooking Class with Ly Seng Lay, who took us to the local market and explained what all the various greens, herbs and different proteins were we didn't recognise. He then taught us to make fresh spring rolls with dipping sauce, fish amok curry and banana & coconut. It was so much fun and delicious. Highly recommend. It is off the main road down some very narrow back alleys so persevere … or get a tuk tuk to take you.</p>
+                            <div class="testimonial-author">
+                                <span class="country-flag">🇬🇧</span>
+                                <span>Gary, UK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <div class="carousel-dot active" data-index="0"></div>
+                    <div class="carousel-dot" data-index="1"></div>
+                    <div class="carousel-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="icons-section">
+        <div class="container">
+            <h2>Why Choosing Our Cooking Class?</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem;">Experience authentic Khmer cuisine with our comprehensive cooking programs</p>
+
+            <div class="icons-container">
+                <div class="icon-item glass">
+                    <div class="icon-circle">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Private Cooking Class</h3>
+                    <p>One-on-one personalized cooking experience</p>
+                </div>
+
+                <div class="icon-item glass">
+                    <div class="icon-circle">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Cooking Class</h3>
+                    <p>Learn together with friends and family</p>
+                </div>
+
+                <div class="icon-item glass">
+                    <div class="icon-circle">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Food Market Tour</h3>
+                    <p>Explore local markets and ingredients</p>
+                </div>
+
+                <div class="icon-item glass">
+                    <div class="icon-circle">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Cooking Certificate</h3>
+                    <p>Receive a certificate of completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="booking">
+        <div class="container">
+            <h2>Visit Us</h2>
+
+            <div class="contact-container">
+                <div class="map-container">
+                    <!-- Updated Google Maps embed centered on Changkran Khmer Restaurant -->
+                    <iframe src="https://maps.google.com/maps?q=13.371576260766636,103.86298834965464&z=15&output=embed"width="600"height="450"style="border:0;"
+    allowfullscreen=""loading="lazy"referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+                </div>
+
+                <div class="contact-info dark-glass">
+                    <h3>Contact Information</h3>
+
+                    <div class="address">
+                        <p><strong>Changkran Khmer Restaurant</strong></p>
+                        <p>Mondol 3 Village, Sangkat Sla Kram</p>
+                        <p>Siem Reap District, Siem Reap Province 17251</p>
+                        <p>Cambodia</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>changkrankhmer@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <span>+855(0) 89 456 241</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-comment"></i>
+                            <span>Telegram / WhatsApp</span>
+                        </p>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/changkrankhmercookingclass" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/changkrankhmer_cookingclasses" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Siem Reap Cooking Class. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 30, density: { enable: true, value_area: 800 } },
+                    color: { value: "#e16d24" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: "#e16d24", opacity: 0.4, width: 1 },
+                    move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
+                }
+            });
+            
+            // Initialize testimonials carousel
+            initTestimonialsCarousel();
+            
+            // Initialize slideshow
+            showSlides(slideIndex);
+            
+            // Add more floating ingredients dynamically
+            addMoreIngredients();
+        });
+
+        // Function to add more floating ingredients
+        function addMoreIngredients() {
+            const ingredientsContainer = document.querySelector('.floating-ingredients');
+            const emojis = ['🥒', '🥕', '🍆', '🍅', '🥔', '🍠', '🥜', '🍤', '🍗', '🌿'];
+            
+            for (let i = 0; i < 8; i++) {
+                const ingredient = document.createElement('div');
+                ingredient.className = 'ingredient';
+                
+                // Random position
+                const top = Math.random() * 80 + 10; // 10% to 90%
+                const left = Math.random() * 80 + 10; // 10% to 90%
+                
+                // Random animation properties
+                const delay = Math.random() * 10;
+                const duration = 12 + Math.random() * 8; // 12-20 seconds
+                
+                ingredient.style.top = `${top}%`;
+                ingredient.style.left = `${left}%`;
+                ingredient.style.animationDelay = `${delay}s`;
+                ingredient.style.animationDuration = `${duration}s`;
+                ingredient.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                
+                ingredientsContainer.appendChild(ingredient);
+            }
+        }
+
+        // Slideshow functionality
+        let slideIndex = 1;
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active-dot";
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Auto-advance slides
+        setInterval(function() {
+            slideIndex++;
+            showSlides(slideIndex);
+        }, 5000);
+
+        // Testimonials carousel functionality
+        function initTestimonialsCarousel() {
+            const carousel = document.getElementById('testimonialsCarousel');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentIndex = 0;
+            
+            // Function to show a specific testimonial
+            function showTestimonial(index) {
+                if (index < 0) index = 2;
+                if (index > 2) index = 0;
+                
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+                
+                // Update active dot
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+                
+                currentIndex = index;
+            }
+            
+            // Add click events to dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    showTestimonial(index);
+                });
+            });
+            
+            // Auto-rotate testimonials
+            setInterval(() => {
+                showTestimonial(currentIndex + 1);
+            }, 5000);
+        }
+
+        // Icon interaction effects
+        const iconItems = document.querySelectorAll('.icon-item');
+        iconItems.forEach((item, index) => {
+            // Add staggered animation delay
+            item.style.animationDelay = `${index * 0.2}s`;
+
+            // Add click effect
+            item.addEventListener('click', function() {
+                this.classList.add('dark-glass');
+                setTimeout(() => {
+                    this.classList.remove('dark-glass');
+                }, 500);
+            });
+        });
+
+        // Add scroll animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.icon-item, .text-box, .contact-info, .map-container, .testimonial-content, .pricing-card');
+
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+
+                // If element is in viewport
+                if (position.top < window.innerHeight - 50) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize elements for animation
+        document.querySelectorAll('.icon-item, .text-box, .contact-info, .map-container, .testimonial-content, .pricing-card').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+
+        // Listen for scroll events
+        window.addEventListener('scroll', animateOnScroll);
+        // Initial check on page load
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
